@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.dog-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(120, 60, 20, 0.15);
+}
+
+.filter-btn {
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  transform: scale(1.05);
+}
+
+.breadcrumb-item {
+  animation: fadeSlideIn 0.3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
